@@ -1,3 +1,7 @@
+# Scenario
+
+Moving to Australia requires alot of side by side comparisons, and the difficult part is determining what is the cheapest way to check the whats the cheapest deals, note that each state has different water costs with different tariffs and that affects the overall billing.
+
 # What This App Does
 Takes your inputs: postcode and annual water use (kL).
 
