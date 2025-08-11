@@ -1,4 +1,4 @@
-#What This App Does
+# What This App Does
 Takes your inputs: postcode and annual water use (kL).
 
 Finds matching providers for that postcode (from the sample mapping in your Python file).
@@ -23,14 +23,14 @@ Lets you download the table as CSV.
 
 Can refresh tariff data via the Refresh tariffs button, which calls your scraping stub refresh_provider_data(). When you add more scrapers, this will pull fresh numbers.
 
-#What It’s For
+# What It’s For
 A quick, like-for-like annual bill comparison between the suppliers that serve a postcode.
 
-#Made With
+# Made With
 PyCharm • Python • Command Prompt • AI Agent • Streamlit
 
 
-How to run the Water Price app (Windows) — every time
+# How to run the Water Price app (Windows) — every time
 Open the project folder
 
 Go to: C:\Users\User\Desktop\water-price-app
