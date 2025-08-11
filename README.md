@@ -33,22 +33,26 @@ PyCharm • Python • Command Prompt • AI Agent • Streamlit
 # How to run the Water Price app (Windows) — every time
 Open the project folder
 
+<img width="675" height="263" alt="image" src="https://github.com/user-attachments/assets/b96dc265-4132-43b0-aeb9-b78318dcb65a" />
+
 Go to: C:\Users\User\Desktop\water-price-app
 
 Click the address bar, type cmd, press Enter (opens Command Prompt in this folder)
 
 Activate the virtual environment
 
-bat
-Copy
-Edit
-.venv\Scripts\activate.bat
-You should see (.venv) at the start of the line.
+type Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass (bypasses to allow scripting on cmd)
 
-Run the app
+then type .venv\Scripts\activate (activates virtual environment)
 
-bat
-Copy
-Edit
-streamlit run streamlit_app.py
-Your browser will open.
+then type streamlit run streamlit_app.py (activates local host)
+
+Then the app should run :) !
+
+# The output tab will open like this:
+
+<img width="1625" height="1005" alt="image" src="https://github.com/user-attachments/assets/21531341-55b3-4465-85c7-edca1856c45b" />
+
+
+
+
