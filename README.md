@@ -26,3 +26,6 @@ Can refresh tariff data via your “Refresh tariffs” button, which calls your 
 
 What it’s for:
 A quick like-for-like annual bill comparison between the suppliers that serve a postcode.
+
+Made using:
+Pycharm, Python, Command Prompt
