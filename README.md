@@ -29,3 +29,27 @@ A quick like-for-like annual bill comparison between the suppliers that serve a 
 
 Made using:
 Pycharm, Python, Command Prompt + AI Agent
+
+
+How to run the Water Price app (Windows) — every time
+Open the project folder
+
+Go to: C:\Users\User\Desktop\water-price-app
+
+Click the address bar, type cmd, press Enter (opens Command Prompt in this folder)
+
+Activate the virtual environment
+
+bat
+Copy
+Edit
+.venv\Scripts\activate.bat
+You should see (.venv) at the start of the line.
+
+Run the app
+
+bat
+Copy
+Edit
+streamlit run streamlit_app.py
+Your browser will open.
