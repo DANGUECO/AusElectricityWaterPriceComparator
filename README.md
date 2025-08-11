@@ -54,5 +54,8 @@ Then the app should run :) !
 <img width="1625" height="1005" alt="image" src="https://github.com/user-attachments/assets/21531341-55b3-4465-85c7-edca1856c45b" />
 
 
+Note: if you want the virtual environment to stop running type Ctrl+C
+
+
 
 
