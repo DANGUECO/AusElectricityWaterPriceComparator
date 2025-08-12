@@ -1,6 +1,19 @@
 # Scenario
 
-Moving to Australia requires alot of side by side comparisons, and the difficult part is determining what is the cheapest and quicketst way to check what the cheapest deals are currently, note that each state has different water costs with different tariffs and that affects the overall billing.
+💧 Why This App Matters
+In Australia, water pricing isn’t standardised — it varies by region, postcode, and provider. Two households using the same amount of water could be paying vastly different annual bills simply because they fall under different water utilities.
+
+For most people, comparing these prices means trawling through multiple provider websites, interpreting complicated tariff tables, and manually calculating costs based on their usage. This process is slow, confusing, and prone to error — meaning many customers never find out if they’re overpaying.
+
+The Australian Water Price Comparator solves this problem instantly.
+
+Enter your postcode and annual water usage.
+
+Get a clear side-by-side comparison of all providers in your area.
+
+See exact annual costs, fixed and usage charges, tariff structures, and notes.
+
+Make informed decisions in seconds, without spreadsheets or manual research.
 
 # What This App Does
 Takes your inputs: postcode and annual water use (kL).
@@ -33,7 +46,6 @@ A quick, like-for-like annual bill comparison between the suppliers that serve a
 # Made With
 PyCharm • Python • Command Prompt • AI Agent • Streamlit
 
-
 # How to run the Water Price app (Windows) — every time
 Open the project folder
 
@@ -55,8 +67,7 @@ Then the app should run :) !
 
 # The output tab will open like this:
 
-<img width="1625" height="1005" alt="image" src="https://github.com/user-attachments/assets/21531341-55b3-4465-85c7-edca1856c45b" />
-
+<img width="2516" height="1172" alt="image" src="https://github.com/user-attachments/assets/9966ad2b-578b-469e-9fcd-821242cf8918" />
 
 Note: if you want the virtual environment to stop running type Ctrl+C
 
