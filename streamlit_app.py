@@ -21,7 +21,7 @@ try:
         copy_providers,
         copy_thresholds,
         get_meta,
-        export_python,
+        # export_python,  # ❌ removed
     )
 except Exception as e:
     st.title("💧 Australian Water Price Comparator")
@@ -38,8 +38,7 @@ except Exception as e:
 st.title("💧 Australian Water Price Comparator")
 st.caption(
     "No scraping. Built-in data from code.\n"
-    "Maintainer Mode is **live**: changes update calculations immediately. "
-    "Use Export only if you want to save edits back to code."
+    "Maintainer Mode is **live**: changes update calculations immediately for this session."
 )
 
 # =========================
@@ -91,8 +90,9 @@ with st.sidebar:
         st.markdown(
             """
 **Live updates.**  
-Edits in Maintainer Mode immediately change the data and recalculations.  
-Click **Export** only if you want a Python snippet to paste back into `water_price_app_extended.py` to save permanently.
+Edits in Maintainer Mode immediately change the data and recalculations for **this session**.
+
+_To persist edits permanently,_ update `water_price_app_extended.py` directly in your editor.
 """
         )
 
@@ -131,7 +131,7 @@ with st.expander("Open maintainer console"):
             if health:
                 st.warning(f"**{sel_key} • {t.name}**\n\n{health}")
 
-            # Widgets (we'll write changes back to session_state on every rerun = live)
+            # Widgets (live writes back to session_state)
             col1, col2 = st.columns(2)
             with col1:
                 name = st.text_input("Provider name", value=t.name, key=f"name_{sel_key}")
@@ -186,16 +186,6 @@ with st.expander("Open maintainer console"):
             # Touch metadata so footer shows today's date for live edits
             st.session_state.meta["last_updated"] = time.strftime("%Y-%m-%d")
 
-            # Export remains optional for persistence
-            if st.button("🧾 Export updated data as Python", key=f"export_{sel_key}"):
-                snippet = export_python(provs, thrs, BLOCK_THRESHOLD_KL, st.session_state.meta)
-                st.session_state["export_snippet"] = snippet
-                st.info("Scroll just below to copy the snippet.")
-
-    if "export_snippet" in st.session_state:
-        st.markdown("#### Copy/paste this into `water_price_app_extended.py` (replace the dicts)")
-        st.code(st.session_state["export_snippet"], language="python")
-
 # =========================
 # Helpers
 # =========================
@@ -249,7 +239,6 @@ def quote_for_usage(postcode: str, kL: float) -> pd.DataFrame:
             tier_desc = "Flat rate"
             block_text = "—"
         else:
-            # ✅ fixed: single colon in the f-string
             usage_str = f"{t.usage_charges[0]:.4f} / {t.usage_charges[1]:.4f}"
             tier_desc = "Two-step"
             block_text = f"{threshold_for(key):.0f} kL"
@@ -349,7 +338,6 @@ st.markdown("### 📈 Cheapest estimated cost vs usage (by postcode)")
 
 def usage_points_around(k: float) -> List[int]:
     base = int(round(k))
-    # sample a few points around the selected usage; clamp at 0
     pts = sorted({max(0, base + d) for d in (-60, -30, 0, 30, 60)})
     return pts or [base]
 
