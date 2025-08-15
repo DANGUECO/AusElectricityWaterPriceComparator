@@ -15,6 +15,10 @@ See exact annual costs, fixed and usage charges, tariff structures, and notes.
 
 Make informed decisions in seconds, without spreadsheets or manual research.
 
+# if you want to see the app itself without the code.
+
+https://share.streamlit.io/user/dangueco
+
 # What This App Does
 Takes your inputs: postcode and annual water use (kL).
 
@@ -38,7 +42,7 @@ Compares multiple usage levels (e.g., 160 vs 200 kL) on a quick chart to show ho
 
 Lets you download the table as CSV.
 
-Can refresh tariff data via the Refresh tariffs button, which calls your scraping stub refresh_provider_data(). When you add more scrapers, this will pull fresh numbers.
+Can refresh tariff data via the Refresh tariffs button, which calls your scraping stub refresh_provider_data(). If you add more scrapers, this will pull fresh numbers.
 
 # What It’s For
 A quick, like-for-like annual bill comparison between the suppliers that serve a postcode.
@@ -46,28 +50,26 @@ A quick, like-for-like annual bill comparison between the suppliers that serve a
 # Made With
 PyCharm • Python • Command Prompt • AI Agent • Streamlit
 
-# How to run the Water Price app (Windows) — every time
+# Tutorial: if you want to run it and change the code to your liking:
 Open the project folder
 
 <img width="675" height="263" alt="image" src="https://github.com/user-attachments/assets/b96dc265-4132-43b0-aeb9-b78318dcb65a" />
 
 Go to: C:\Users\User\Desktop\water-price-app
 
-Click the address bar, type cmd, press Enter (opens Command Prompt in this folder)
+Click the address bar, type cmd, press Enter these commands (opens Command Prompt in this folder)
 
-Activate the virtual environment
+1.  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass (bypasses to allow scripting on cmd)
 
-type Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass (bypasses to allow scripting on cmd)
+2. .venv\Scripts\activate (activates virtual environment)
 
-then type .venv\Scripts\activate (activates virtual environment)
-
-then type streamlit run streamlit_app.py (activates local host)
+3. streamlit run streamlit_app.py (activates local host)
 
 Then the app should run :) !
 
 # The output tab will open like this:
 
-<img width="2516" height="1172" alt="image" src="https://github.com/user-attachments/assets/9966ad2b-578b-469e-9fcd-821242cf8918" />
+<img width="1927" height="1055" alt="image" src="https://github.com/user-attachments/assets/5e9f42dc-9edb-4603-a3e4-1faf247116d3" />
 
 Note: if you want the virtual environment to stop running type Ctrl+C
 
