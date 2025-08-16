@@ -1,0 +1,3759 @@
+{
+  "scheduler": {
+    "enabled": true,
+    "interval_minutes": 1440,
+    "last_run_at": "2025-08-16T09:42:15.227680+00:00",
+    "next_run_due_at": "2025-08-17T09:42:15.227680+00:00",
+    "history": [
+      {
+        "ts": "2025-08-16T09:39:35.238921+00:00",
+        "enabled": true,
+        "interval": 1440
+      }
+    ]
+  },
+  "providers": {
+    "SYDNEY": {
+      "provider_key": "SYDNEY",
+      "last_checked": "2025-08-16T09:42:15.227227+00:00",
+      "last_success": "2025-08-16T09:42:15.227227+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "YVW": {
+      "provider_key": "YVW",
+      "last_checked": "2025-08-16T09:42:15.227248+00:00",
+      "last_success": "2025-08-16T09:42:15.227248+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "GWW_CENTRAL": {
+      "provider_key": "GWW_CENTRAL",
+      "last_checked": "2025-08-16T09:42:15.227260+00:00",
+      "last_success": "2025-08-16T09:42:15.227260+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "GWW_WESTERN": {
+      "provider_key": "GWW_WESTERN",
+      "last_checked": "2025-08-16T09:42:15.227271+00:00",
+      "last_success": "2025-08-16T09:42:15.227271+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "SEW": {
+      "provider_key": "SEW",
+      "last_checked": "2025-08-16T09:42:15.227280+00:00",
+      "last_success": "2025-08-16T09:42:15.227280+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "TASWATER": {
+      "provider_key": "TASWATER",
+      "last_checked": "2025-08-16T09:42:15.227289+00:00",
+      "last_success": "2025-08-16T09:42:15.227289+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "WACORP": {
+      "provider_key": "WACORP",
+      "last_checked": "2025-08-16T09:42:15.227297+00:00",
+      "last_success": "2025-08-16T09:42:15.227297+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "ICON": {
+      "provider_key": "ICON",
+      "last_checked": "2025-08-16T09:42:15.227306+00:00",
+      "last_success": "2025-08-16T09:42:15.227306+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "REDLAND": {
+      "provider_key": "REDLAND",
+      "last_checked": "2025-08-16T09:42:15.227314+00:00",
+      "last_success": "2025-08-16T09:42:15.227314+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "URBAN_UTILITIES": {
+      "provider_key": "URBAN_UTILITIES",
+      "last_checked": "2025-08-16T09:42:15.227322+00:00",
+      "last_success": "2025-08-16T09:42:15.227322+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "SAWATER": {
+      "provider_key": "SAWATER",
+      "last_checked": "2025-08-16T09:42:15.227330+00:00",
+      "last_success": "2025-08-16T09:42:15.227330+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "POWER_WATER_NT": {
+      "provider_key": "POWER_WATER_NT",
+      "last_checked": "2025-08-16T09:42:15.227337+00:00",
+      "last_success": "2025-08-16T09:42:15.227337+00:00",
+      "failure_count": 0,
+      "status": "OK",
+      "notes": []
+    },
+    "UNITYWATER": {
+      "provider_key": "UNITYWATER",
+      "last_checked": "2025-08-16T09:42:15.227345+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "GOLD_COAST_WATER": {
+      "provider_key": "GOLD_COAST_WATER",
+      "last_checked": "2025-08-16T09:42:15.227379+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "LOGAN_WATER": {
+      "provider_key": "LOGAN_WATER",
+      "last_checked": "2025-08-16T09:42:15.227405+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "HUNTER": {
+      "provider_key": "HUNTER",
+      "last_checked": "2025-08-16T09:42:15.227428+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "CENTRAL_COAST": {
+      "provider_key": "CENTRAL_COAST",
+      "last_checked": "2025-08-16T09:42:15.227452+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "BARWON": {
+      "provider_key": "BARWON",
+      "last_checked": "2025-08-16T09:42:15.227475+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "CENTRAL_HIGHLANDS": {
+      "provider_key": "CENTRAL_HIGHLANDS",
+      "last_checked": "2025-08-16T09:42:15.227497+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "COLIBAN": {
+      "provider_key": "COLIBAN",
+      "last_checked": "2025-08-16T09:42:15.227520+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "GOULBURN_VALLEY": {
+      "provider_key": "GOULBURN_VALLEY",
+      "last_checked": "2025-08-16T09:42:15.227542+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "NORTH_EAST": {
+      "provider_key": "NORTH_EAST",
+      "last_checked": "2025-08-16T09:42:15.227565+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "LOWER_MURRAY": {
+      "provider_key": "LOWER_MURRAY",
+      "last_checked": "2025-08-16T09:42:15.227587+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "AQWEST": {
+      "provider_key": "AQWEST",
+      "last_checked": "2025-08-16T09:42:15.227610+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    },
+    "BUSSELTON_WATER": {
+      "provider_key": "BUSSELTON_WATER",
+      "last_checked": "2025-08-16T09:42:15.227632+00:00",
+      "last_success": null,
+      "failure_count": 13,
+      "status": "NON_COMMUNICATING",
+      "notes": [
+        "Placeholder tariffs; needs curation."
+      ]
+    }
+  },
+  "incidents": [
+    {
+      "id": 1,
+      "provider_key": "UNITYWATER",
+      "code": "PLACEHOLDER",
+      "status": "open",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {},
+      "opened_at": "2025-08-16T09:41:10.536360+00:00",
+      "updated_at": "2025-08-16T09:42:15.227367+00:00"
+    },
+    {
+      "id": 2,
+      "provider_key": "GOLD_COAST_WATER",
+      "code": "PLACEHOLDER",
+      "status": "open",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {},
+      "opened_at": "2025-08-16T09:41:10.536384+00:00",
+      "updated_at": "2025-08-16T09:42:15.227394+00:00"
+    },
+    {
+      "id": 3,
+      "provider_key": "LOGAN_WATER",
+      "code": "PLACEHOLDER",
+      "status": "open",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {},
+      "opened_at": "2025-08-16T09:41:10.536402+00:00",
+      "updated_at": "2025-08-16T09:42:15.227418+00:00"
+    },
+    {
+      "id": 4,
+      "provider_key": "HUNTER",
+      "code": "PLACEHOLDER",
+      "status": "resolved",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {
+        "note": "Resolved via UI"
+      },
+      "opened_at": "2025-08-16T09:41:10.536417+00:00",
+      "updated_at": "2025-08-16T09:42:56.722018+00:00"
+    },
+    {
+      "id": 5,
+      "provider_key": "CENTRAL_COAST",
+      "code": "PLACEHOLDER",
+      "status": "open",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {},
+      "opened_at": "2025-08-16T09:41:10.536432+00:00",
+      "updated_at": "2025-08-16T09:42:15.227465+00:00"
+    },
+    {
+      "id": 6,
+      "provider_key": "BARWON",
+      "code": "PLACEHOLDER",
+      "status": "acknowledged",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {
+        "note": "Acknowledged via UI"
+      },
+      "opened_at": "2025-08-16T09:41:10.536447+00:00",
+      "updated_at": "2025-08-16T09:43:02.303904+00:00"
+    },
+    {
+      "id": 7,
+      "provider_key": "CENTRAL_HIGHLANDS",
+      "code": "PLACEHOLDER",
+      "status": "open",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {},
+      "opened_at": "2025-08-16T09:41:10.536461+00:00",
+      "updated_at": "2025-08-16T09:42:15.227510+00:00"
+    },
+    {
+      "id": 8,
+      "provider_key": "COLIBAN",
+      "code": "PLACEHOLDER",
+      "status": "open",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {},
+      "opened_at": "2025-08-16T09:41:10.536476+00:00",
+      "updated_at": "2025-08-16T09:42:15.227533+00:00"
+    },
+    {
+      "id": 9,
+      "provider_key": "GOULBURN_VALLEY",
+      "code": "PLACEHOLDER",
+      "status": "open",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {},
+      "opened_at": "2025-08-16T09:41:10.536489+00:00",
+      "updated_at": "2025-08-16T09:42:15.227555+00:00"
+    },
+    {
+      "id": 10,
+      "provider_key": "NORTH_EAST",
+      "code": "PLACEHOLDER",
+      "status": "open",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {},
+      "opened_at": "2025-08-16T09:41:10.536503+00:00",
+      "updated_at": "2025-08-16T09:42:15.227578+00:00"
+    },
+    {
+      "id": 11,
+      "provider_key": "LOWER_MURRAY",
+      "code": "PLACEHOLDER",
+      "status": "open",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {},
+      "opened_at": "2025-08-16T09:41:10.536517+00:00",
+      "updated_at": "2025-08-16T09:42:15.227600+00:00"
+    },
+    {
+      "id": 12,
+      "provider_key": "AQWEST",
+      "code": "PLACEHOLDER",
+      "status": "open",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {},
+      "opened_at": "2025-08-16T09:41:10.536529+00:00",
+      "updated_at": "2025-08-16T09:42:15.227623+00:00"
+    },
+    {
+      "id": 13,
+      "provider_key": "BUSSELTON_WATER",
+      "code": "PLACEHOLDER",
+      "status": "open",
+      "summary": "Provider has placeholder (zero) tariffs.",
+      "details": {},
+      "opened_at": "2025-08-16T09:41:10.536542+00:00",
+      "updated_at": "2025-08-16T09:42:15.227645+00:00"
+    },
+    {
+      "id": 14,
+      "provider_key": "UNITYWATER",
+      "code": "NON_COMMUNICATING",
+      "status": "open",
+      "summary": "UNITYWATER failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13
+      },
+      "opened_at": "2025-08-16T09:42:11.629659+00:00",
+      "updated_at": "2025-08-16T09:42:15.227356+00:00"
+    },
+    {
+      "id": 15,
+      "provider_key": "GOLD_COAST_WATER",
+      "code": "NON_COMMUNICATING",
+      "status": "open",
+      "summary": "GOLD_COAST_WATER failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13
+      },
+      "opened_at": "2025-08-16T09:42:11.629706+00:00",
+      "updated_at": "2025-08-16T09:42:15.227386+00:00"
+    },
+    {
+      "id": 16,
+      "provider_key": "LOGAN_WATER",
+      "code": "NON_COMMUNICATING",
+      "status": "resolved",
+      "summary": "LOGAN_WATER failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13,
+        "note": "Resolved via UI"
+      },
+      "opened_at": "2025-08-16T09:42:11.629742+00:00",
+      "updated_at": "2025-08-16T09:43:08.668491+00:00"
+    },
+    {
+      "id": 17,
+      "provider_key": "HUNTER",
+      "code": "NON_COMMUNICATING",
+      "status": "open",
+      "summary": "HUNTER failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13
+      },
+      "opened_at": "2025-08-16T09:42:11.629775+00:00",
+      "updated_at": "2025-08-16T09:42:15.227434+00:00"
+    },
+    {
+      "id": 18,
+      "provider_key": "CENTRAL_COAST",
+      "code": "NON_COMMUNICATING",
+      "status": "open",
+      "summary": "CENTRAL_COAST failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13
+      },
+      "opened_at": "2025-08-16T09:42:11.629807+00:00",
+      "updated_at": "2025-08-16T09:42:15.227457+00:00"
+    },
+    {
+      "id": 19,
+      "provider_key": "BARWON",
+      "code": "NON_COMMUNICATING",
+      "status": "open",
+      "summary": "BARWON failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13
+      },
+      "opened_at": "2025-08-16T09:42:11.629840+00:00",
+      "updated_at": "2025-08-16T09:42:15.227481+00:00"
+    },
+    {
+      "id": 20,
+      "provider_key": "CENTRAL_HIGHLANDS",
+      "code": "NON_COMMUNICATING",
+      "status": "open",
+      "summary": "CENTRAL_HIGHLANDS failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13
+      },
+      "opened_at": "2025-08-16T09:42:11.629871+00:00",
+      "updated_at": "2025-08-16T09:42:15.227503+00:00"
+    },
+    {
+      "id": 21,
+      "provider_key": "COLIBAN",
+      "code": "NON_COMMUNICATING",
+      "status": "open",
+      "summary": "COLIBAN failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13
+      },
+      "opened_at": "2025-08-16T09:42:11.629902+00:00",
+      "updated_at": "2025-08-16T09:42:15.227526+00:00"
+    },
+    {
+      "id": 22,
+      "provider_key": "GOULBURN_VALLEY",
+      "code": "NON_COMMUNICATING",
+      "status": "open",
+      "summary": "GOULBURN_VALLEY failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13
+      },
+      "opened_at": "2025-08-16T09:42:11.629934+00:00",
+      "updated_at": "2025-08-16T09:42:15.227548+00:00"
+    },
+    {
+      "id": 23,
+      "provider_key": "NORTH_EAST",
+      "code": "NON_COMMUNICATING",
+      "status": "open",
+      "summary": "NORTH_EAST failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13
+      },
+      "opened_at": "2025-08-16T09:42:11.629965+00:00",
+      "updated_at": "2025-08-16T09:42:15.227570+00:00"
+    },
+    {
+      "id": 24,
+      "provider_key": "LOWER_MURRAY",
+      "code": "NON_COMMUNICATING",
+      "status": "open",
+      "summary": "LOWER_MURRAY failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13
+      },
+      "opened_at": "2025-08-16T09:42:11.629996+00:00",
+      "updated_at": "2025-08-16T09:42:15.227593+00:00"
+    },
+    {
+      "id": 25,
+      "provider_key": "AQWEST",
+      "code": "NON_COMMUNICATING",
+      "status": "resolved",
+      "summary": "AQWEST failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13,
+        "note": "Resolved via UI"
+      },
+      "opened_at": "2025-08-16T09:42:11.630028+00:00",
+      "updated_at": "2025-08-16T09:43:14.266994+00:00"
+    },
+    {
+      "id": 26,
+      "provider_key": "BUSSELTON_WATER",
+      "code": "NON_COMMUNICATING",
+      "status": "resolved",
+      "summary": "BUSSELTON_WATER failed 3 consecutive checks.",
+      "details": {
+        "failure_count": 13,
+        "note": "Resolved via UI"
+      },
+      "opened_at": "2025-08-16T09:42:11.630059+00:00",
+      "updated_at": "2025-08-16T09:43:11.807102+00:00"
+    }
+  ],
+  "runs": [
+    {
+      "ts": "2025-08-16T09:39:35.238935+00:00",
+      "event": "scheduler_on",
+      "details": {
+        "interval_minutes": 1440
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536214+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536370+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536390+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536407+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536421+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536436+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536451+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536465+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536479+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536493+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536507+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536521+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536533+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536545+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:41:10.536578+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 13
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.392641+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.392832+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.392856+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.392877+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.392896+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.392915+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.392933+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.392951+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.392969+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.392987+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.393005+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.393024+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.393041+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.393059+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:10.393111+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 13
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629478+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629673+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 14,
+        "provider_key": "UNITYWATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629686+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629714+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 15,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629724+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629749+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 16,
+        "provider_key": "LOGAN_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629758+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629783+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 17,
+        "provider_key": "HUNTER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629791+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629815+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 18,
+        "provider_key": "CENTRAL_COAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629824+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629848+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 19,
+        "provider_key": "BARWON",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629856+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629879+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 20,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629887+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629910+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 21,
+        "provider_key": "COLIBAN",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629918+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629942+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 22,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629949+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629972+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 23,
+        "provider_key": "NORTH_EAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.629980+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.630004+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 24,
+        "provider_key": "LOWER_MURRAY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.630012+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.630036+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 25,
+        "provider_key": "AQWEST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.630044+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.630067+00:00",
+      "event": "incident_open",
+      "details": {
+        "id": 26,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.630075+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:11.630125+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 26
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.783978+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784116+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 14,
+        "provider_key": "UNITYWATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784124+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784140+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 15,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784147+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784161+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 16,
+        "provider_key": "LOGAN_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784167+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784180+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 17,
+        "provider_key": "HUNTER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784186+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784199+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 18,
+        "provider_key": "CENTRAL_COAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784205+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784217+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 19,
+        "provider_key": "BARWON",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784223+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784235+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 20,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784241+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784254+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 21,
+        "provider_key": "COLIBAN",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784259+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784272+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 22,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784279+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784291+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 23,
+        "provider_key": "NORTH_EAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784297+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784309+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 24,
+        "provider_key": "LOWER_MURRAY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784315+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784327+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 25,
+        "provider_key": "AQWEST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784333+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784345+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 26,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784350+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:12.784385+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 26
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287389+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287520+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 14,
+        "provider_key": "UNITYWATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287528+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287543+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 15,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287550+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287563+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 16,
+        "provider_key": "LOGAN_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287570+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287582+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 17,
+        "provider_key": "HUNTER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287589+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287601+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 18,
+        "provider_key": "CENTRAL_COAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287606+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287619+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 19,
+        "provider_key": "BARWON",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287624+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287636+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 20,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287642+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287654+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 21,
+        "provider_key": "COLIBAN",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287660+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287672+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 22,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287678+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287690+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 23,
+        "provider_key": "NORTH_EAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287696+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287709+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 24,
+        "provider_key": "LOWER_MURRAY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287715+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287728+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 25,
+        "provider_key": "AQWEST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287734+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287747+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 26,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287752+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.287787+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 26
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717530+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717663+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 14,
+        "provider_key": "UNITYWATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717671+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717686+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 15,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717693+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717706+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 16,
+        "provider_key": "LOGAN_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717712+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717725+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 17,
+        "provider_key": "HUNTER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717730+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717743+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 18,
+        "provider_key": "CENTRAL_COAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717749+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717762+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 19,
+        "provider_key": "BARWON",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717768+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717780+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 20,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717787+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717800+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 21,
+        "provider_key": "COLIBAN",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717805+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717818+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 22,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717823+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717836+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 23,
+        "provider_key": "NORTH_EAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717841+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717853+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 24,
+        "provider_key": "LOWER_MURRAY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717859+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717872+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 25,
+        "provider_key": "AQWEST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717877+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717890+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 26,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717896+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:13.717931+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 26
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010295+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010444+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 14,
+        "provider_key": "UNITYWATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010453+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010470+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 15,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010477+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010494+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 16,
+        "provider_key": "LOGAN_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010502+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010519+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 17,
+        "provider_key": "HUNTER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010527+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010542+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 18,
+        "provider_key": "CENTRAL_COAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010548+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010564+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 19,
+        "provider_key": "BARWON",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010570+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010584+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 20,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010591+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010605+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 21,
+        "provider_key": "COLIBAN",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010612+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010626+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 22,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010632+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010647+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 23,
+        "provider_key": "NORTH_EAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010654+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010668+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 24,
+        "provider_key": "LOWER_MURRAY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010674+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010689+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 25,
+        "provider_key": "AQWEST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010696+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010709+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 26,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010715+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.010755+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 26
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278713+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278845+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 14,
+        "provider_key": "UNITYWATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278854+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278869+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 15,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278876+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278889+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 16,
+        "provider_key": "LOGAN_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278895+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278908+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 17,
+        "provider_key": "HUNTER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278913+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278926+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 18,
+        "provider_key": "CENTRAL_COAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278932+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278944+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 19,
+        "provider_key": "BARWON",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278950+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278963+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 20,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278969+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278982+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 21,
+        "provider_key": "COLIBAN",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.278988+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.279000+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 22,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.279005+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.279017+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 23,
+        "provider_key": "NORTH_EAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.279023+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.279035+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 24,
+        "provider_key": "LOWER_MURRAY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.279041+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.279053+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 25,
+        "provider_key": "AQWEST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.279059+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.279071+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 26,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.279076+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.279111+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 26
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424218+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424350+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 14,
+        "provider_key": "UNITYWATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424359+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424374+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 15,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424380+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424394+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 16,
+        "provider_key": "LOGAN_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424400+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424412+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 17,
+        "provider_key": "HUNTER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424417+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424430+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 18,
+        "provider_key": "CENTRAL_COAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424436+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424448+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 19,
+        "provider_key": "BARWON",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424454+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424466+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 20,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424472+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424484+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 21,
+        "provider_key": "COLIBAN",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424490+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424503+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 22,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424508+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424520+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 23,
+        "provider_key": "NORTH_EAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424526+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424538+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 24,
+        "provider_key": "LOWER_MURRAY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424544+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424556+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 25,
+        "provider_key": "AQWEST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424561+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424573+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 26,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424578+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.424612+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 26
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.674798+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.674960+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 14,
+        "provider_key": "UNITYWATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.674970+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.674989+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 15,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.674998+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675015+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 16,
+        "provider_key": "LOGAN_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675024+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675042+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 17,
+        "provider_key": "HUNTER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675049+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675066+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 18,
+        "provider_key": "CENTRAL_COAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675074+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675090+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 19,
+        "provider_key": "BARWON",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675098+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675114+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 20,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675122+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675137+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 21,
+        "provider_key": "COLIBAN",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675145+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675161+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 22,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675168+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675185+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 23,
+        "provider_key": "NORTH_EAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675193+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675209+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 24,
+        "provider_key": "LOWER_MURRAY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675217+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675233+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 25,
+        "provider_key": "AQWEST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675240+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675256+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 26,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675263+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.675308+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 26
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.795980+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796113+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 14,
+        "provider_key": "UNITYWATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796121+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796137+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 15,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796144+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796157+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 16,
+        "provider_key": "LOGAN_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796163+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796177+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 17,
+        "provider_key": "HUNTER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796182+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796195+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 18,
+        "provider_key": "CENTRAL_COAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796200+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796213+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 19,
+        "provider_key": "BARWON",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796218+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796230+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 20,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796236+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796248+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 21,
+        "provider_key": "COLIBAN",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796254+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796266+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 22,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796271+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796283+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 23,
+        "provider_key": "NORTH_EAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796288+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796301+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 24,
+        "provider_key": "LOWER_MURRAY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796306+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796319+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 25,
+        "provider_key": "AQWEST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796325+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796338+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 26,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796344+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:14.796378+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 26
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055100+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055368+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 14,
+        "provider_key": "UNITYWATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055385+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055418+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 15,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055431+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055461+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 16,
+        "provider_key": "LOGAN_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055474+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055504+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 17,
+        "provider_key": "HUNTER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055516+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055544+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 18,
+        "provider_key": "CENTRAL_COAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055556+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055584+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 19,
+        "provider_key": "BARWON",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055597+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055623+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 20,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055636+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055663+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 21,
+        "provider_key": "COLIBAN",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055676+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055702+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 22,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055715+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055741+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 23,
+        "provider_key": "NORTH_EAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055750+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055763+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 24,
+        "provider_key": "LOWER_MURRAY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055769+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055781+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 25,
+        "provider_key": "AQWEST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055787+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055799+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 26,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055805+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.055839+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 26
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227199+00:00",
+      "event": "refresh_start",
+      "details": {
+        "only": "ALL"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227359+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 14,
+        "provider_key": "UNITYWATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227369+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 1,
+        "provider_key": "UNITYWATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227388+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 15,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227396+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 2,
+        "provider_key": "GOLD_COAST_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227413+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 16,
+        "provider_key": "LOGAN_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227420+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 3,
+        "provider_key": "LOGAN_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227436+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 17,
+        "provider_key": "HUNTER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227443+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 4,
+        "provider_key": "HUNTER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227459+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 18,
+        "provider_key": "CENTRAL_COAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227467+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 5,
+        "provider_key": "CENTRAL_COAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227483+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 19,
+        "provider_key": "BARWON",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227489+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 6,
+        "provider_key": "BARWON",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227505+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 20,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227512+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 7,
+        "provider_key": "CENTRAL_HIGHLANDS",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227528+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 21,
+        "provider_key": "COLIBAN",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227535+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 8,
+        "provider_key": "COLIBAN",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227550+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 22,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227557+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 9,
+        "provider_key": "GOULBURN_VALLEY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227572+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 23,
+        "provider_key": "NORTH_EAST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227579+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 10,
+        "provider_key": "NORTH_EAST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227595+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 24,
+        "provider_key": "LOWER_MURRAY",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227602+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 11,
+        "provider_key": "LOWER_MURRAY",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227618+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 25,
+        "provider_key": "AQWEST",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227625+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 12,
+        "provider_key": "AQWEST",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227640+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 26,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "NON_COMMUNICATING"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227647+00:00",
+      "event": "incident_update",
+      "details": {
+        "id": 13,
+        "provider_key": "BUSSELTON_WATER",
+        "code": "PLACEHOLDER"
+      }
+    },
+    {
+      "ts": "2025-08-16T09:42:15.227691+00:00",
+      "event": "refresh_end",
+      "details": {
+        "count": 25,
+        "errors": 13,
+        "warns": 0,
+        "incidents_opened": 26
+      }
+    }
+  ],
+  "snapshots": {
+    "2025-26": {
+      "SYDNEY": {
+        "network_charge": 156.51999999999998,
+        "sewerage_charge": 623.56,
+        "u1": 2.67,
+        "u2": null,
+        "est160": 1207.28
+      },
+      "YVW": {
+        "network_charge": 312.98,
+        "sewerage_charge": 607.57,
+        "u1": 3.1702,
+        "u2": null,
+        "est160": 1427.7820000000002
+      },
+      "GWW_CENTRAL": {
+        "network_charge": 224.26,
+        "sewerage_charge": 298.0,
+        "u1": 3.6413,
+        "u2": 4.1629,
+        "est160": 1104.868
+      },
+      "GWW_WESTERN": {
+        "network_charge": 224.23,
+        "sewerage_charge": 525.83,
+        "u1": 2.6453,
+        "u2": 3.4059,
+        "est160": 1173.308
+      },
+      "SEW": {
+        "network_charge": 87.9,
+        "sewerage_charge": 401.65,
+        "u1": 3.0084,
+        "u2": 3.8383,
+        "est160": 970.894
+      },
+      "TASWATER": {
+        "network_charge": 407.33,
+        "sewerage_charge": 469.01,
+        "u1": 1.2612,
+        "u2": null,
+        "est160": 1078.132
+      },
+      "WACORP": {
+        "network_charge": 296.89,
+        "sewerage_charge": 0.0,
+        "u1": 2.052,
+        "u2": 2.734,
+        "est160": 625.21
+      },
+      "ICON": {
+        "network_charge": 243.47,
+        "sewerage_charge": 617.21,
+        "u1": 2.78,
+        "u2": 5.58,
+        "est160": 1305.48
+      },
+      "REDLAND": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 4.337,
+        "u2": null,
+        "est160": 693.92
+      },
+      "URBAN_UTILITIES": {
+        "network_charge": 253.30999999999997,
+        "sewerage_charge": 715.765,
+        "u1": 4.498,
+        "u2": 5.555,
+        "est160": 1688.755
+      },
+      "SAWATER": {
+        "network_charge": 329.2,
+        "sewerage_charge": 376.0,
+        "u1": 2.357,
+        "u2": 3.365,
+        "est160": 1082.3200000000002
+      },
+      "POWER_WATER_NT": {
+        "network_charge": 345.1805,
+        "sewerage_charge": 953.89,
+        "u1": 2.2647,
+        "u2": null,
+        "est160": 1661.4225000000001
+      },
+      "UNITYWATER": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "GOLD_COAST_WATER": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "LOGAN_WATER": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "HUNTER": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "CENTRAL_COAST": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "BARWON": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "CENTRAL_HIGHLANDS": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "COLIBAN": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "GOULBURN_VALLEY": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "NORTH_EAST": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "LOWER_MURRAY": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "AQWEST": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      },
+      "BUSSELTON_WATER": {
+        "network_charge": 0.0,
+        "sewerage_charge": 0.0,
+        "u1": 0.0,
+        "u2": null,
+        "est160": 0.0
+      }
+    }
+  },
+  "meta": {
+    "fy": "2025-26",
+    "last_updated": "2025-08-14"
+  }
+}
