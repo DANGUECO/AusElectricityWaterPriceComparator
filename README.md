@@ -7,45 +7,70 @@ For most people, comparing these prices means trawling through multiple provider
 
 The Australian Water Price Comparator solves this problem instantly.
 
-Enter your postcode and annual water usage.
+🧩 How to use (2 minutes)
 
-Get a clear side-by-side comparison of all providers in your area.
+Enter postcodes + annual usage (e.g., 160 kL).
 
-See exact annual costs, fixed and usage charges, tariff structures, and notes.
+See Cheapest option per postcode. Click “Explain” to see the exact math.
 
-Make informed decisions in seconds, without spreadsheets or manual research.
+Optional: open Cost curves to compare providers across a usage range.
 
-# if you want to see the app itself without the code.
+Top tiles show overall health (OK/STALE/etc).
 
-https://share.streamlit.io/user/dangueco
+Use Refresh now to validate everything, or Enable scheduler for automatic checks.
 
-# What This App Does
-Takes your inputs: postcode and annual water use (kL).
+Check Provider health, Incidents, and Run logs for operational visibility.
 
-Finds matching providers for that postcode (from the sample mapping in your Python file).
+# Test if you want
+https://share.streamlit.io/user/dangueco 
 
-Calculates an estimated annual bill for each provider using built-in 2025–26 tariffs:
+# Explainability (why trust the numbers?)
 
-Adds fixed charges (water network + sewerage).
+For each postcode/provider/usage we show:
 
-Adds usage charges based on your kL:
+Line items:
 
-Flat rate → kL × rate.
+Fixed = water + sewerage
 
-Two-step/block tariff → splits usage at the block limit (160.066 kL by default; Icon Water ~200 kL/year).
+Usage Tier 1 = rate × kL up to threshold
 
-Shows results in a table with fixed charges, usage rates, notes/assumptions, and the total estimate.
+Usage Tier 2 = higher rate × excess kL (if any)
 
-Highlights the cheapest option at your chosen usage.
+Threshold (kL/yr), FY, Last data updated, and Notes.
 
-Compares multiple usage levels (e.g., 160 vs 200 kL) on a quick chart to show how costs change.
+# Code translations
 
-Lets you download the table as CSV.
+OK = recently checked + valid.
 
-Can refresh tariff data via the Refresh tariffs button, which calls your scraping stub refresh_provider_data(). If you add more scrapers, this will pull fresh numbers.
+STALE = last check older than SLA days.
 
-# What It’s For
-A quick, like-for-like annual bill comparison between the suppliers that serve a postcode.
+INCOMPLETE = placeholder tariffs (zeros) — needs curation.
+
+ERROR = failed validation (negative rates, weird tiers, etc.).
+
+NON-COMMUNICATING = repeated failures reached threshold (escalate).
+
+Run logs = breadcrumbs for refreshes, incidents, and scheduler toggles.
+
+# Data & compliance
+
+No live scraping in this repo. You maintain tariffs in code.
+
+Update FY/“last updated” via the sidebar.
+
+You can export updated data structures with export_python(...) (backend provides a snippet to paste back).
+
+#FAQ 
+
+Why is something “Incomplete”? It’s a placeholder (zeros). Fill the tariff.
+
+Why “Stale”? Last check exceeded the SLA window. Hit Refresh or enable the scheduler.
+
+Can I bulk compare? Yes — paste many postcodes, the table shows the cheapest for each.
+
+Where’s the data stored? In code (PROVIDERS) + state in ops_state.json.
+
+Can we add alerts? Yes—easy to add a Slack webhook where incidents open.
 
 # Made With
 PyCharm • Python • Command Prompt • AI Agent • Streamlit
