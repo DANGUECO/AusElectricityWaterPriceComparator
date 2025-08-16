@@ -81,11 +81,9 @@ Then the app should run :) !
 
 # The output tab will open like this:
 
-# Cost curve
-
 <img width="2026" height="1014" alt="image" src="https://github.com/user-attachments/assets/d3061d32-be47-4473-9f69-a7353b9dcf39" />
 
-# Provider health 
+<img width="1537" height="573" alt="image" src="https://github.com/user-attachments/assets/e849e341-718c-414a-a930-4e4e920ef997" />
 
 <img width="1534" height="574" alt="image" src="https://github.com/user-attachments/assets/48ed9a1b-f7d6-4d69-a0d3-e88d9aa9495d" />
 
