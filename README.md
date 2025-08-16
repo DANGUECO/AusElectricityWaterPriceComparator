@@ -38,20 +38,6 @@ Usage Tier 2 = higher rate × excess kL (if any)
 
 Threshold (kL/yr), FY, Last data updated, and Notes.
 
-# Code translations
-
-OK = recently checked + valid.
-
-STALE = last check older than SLA days.
-
-INCOMPLETE = placeholder tariffs (zeros) — needs curation.
-
-ERROR = failed validation (negative rates, weird tiers, etc.).
-
-NON-COMMUNICATING = repeated failures reached threshold (escalate).
-
-Run logs = breadcrumbs for refreshes, incidents, and scheduler toggles.
-
 # Data & compliance
 
 No live scraping in this repo. You maintain tariffs in code.
@@ -60,7 +46,7 @@ Update FY/“last updated” via the sidebar.
 
 You can export updated data structures with export_python(...) (backend provides a snippet to paste back).
 
-#FAQ 
+# FAQ 
 
 Why is something “Incomplete”? It’s a placeholder (zeros). Fill the tariff.
 
@@ -78,8 +64,6 @@ PyCharm • Python • Command Prompt • AI Agent • Streamlit
 # Tutorial: if you want to run it and change the code to your liking:
 Open the project folder
 
-<img width="675" height="263" alt="image" src="https://github.com/user-attachments/assets/b96dc265-4132-43b0-aeb9-b78318dcb65a" />
-
 Go to: C:\Users\User\Desktop\water-price-app
 
 Click the address bar, type cmd, press Enter these commands (opens Command Prompt in this folder)
@@ -90,13 +74,33 @@ Click the address bar, type cmd, press Enter these commands (opens Command Promp
 
 3. streamlit run streamlit_app.py (activates local host)
 
+4. Note: if you want the virtual environment to stop running type Ctrl+C
+
 Then the app should run :) !
+
 
 # The output tab will open like this:
 
-<img width="1927" height="1055" alt="image" src="https://github.com/user-attachments/assets/5e9f42dc-9edb-4603-a3e4-1faf247116d3" />
+# Cost curve
 
-Note: if you want the virtual environment to stop running type Ctrl+C
+<img width="2026" height="1014" alt="image" src="https://github.com/user-attachments/assets/d3061d32-be47-4473-9f69-a7353b9dcf39" />
+
+# Provider health 
+
+<img width="1534" height="574" alt="image" src="https://github.com/user-attachments/assets/48ed9a1b-f7d6-4d69-a0d3-e88d9aa9495d" />
+
+# Incident Tracking
+
+<img width="1533" height="765" alt="image" src="https://github.com/user-attachments/assets/d6cce5a5-184a-44ba-bbdc-7dabe766fdd3" />
+
+# RUn logs
+
+<img width="1494" height="602" alt="image" src="https://github.com/user-attachments/assets/54cc9e57-cdce-42da-ac2a-7517a3f00612" />
+
+# Glossary
+
+<img width="805" height="401" alt="image" src="https://github.com/user-attachments/assets/dd0bf785-90cc-459e-843b-d5b1f343bcf1" />
+
 
 
 
