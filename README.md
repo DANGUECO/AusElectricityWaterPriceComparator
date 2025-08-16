@@ -62,19 +62,36 @@ Can we add alerts? Yes—easy to add a Slack webhook where incidents open.
 PyCharm • Python • Command Prompt • AI Agent • Streamlit
 
 # Tutorial: if you want to run it and change the code to your liking:
-Open the project folder
 
-Go to: C:\Users\User\Desktop\water-price-app
+Run it locally (2 min)
+Windows (PowerShell)
 
-Click the address bar, type cmd, press Enter these commands (opens Command Prompt in this folder)
+Open the project folder → type powershell in the address bar → Enter
 
-1.  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass (bypasses to allow scripting on cmd)
+Create + activate venv
 
-2. .venv\Scripts\activate (activates virtual environment)
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
 
-3. streamlit run streamlit_app.py (activates local host)
 
-4. Note: if you want the virtual environment to stop running type Ctrl+C
+If you see “running scripts is disabled”, run this once per session:
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\.venv\Scripts\Activate.ps1
+
+
+Install deps
+
+pip install -r requirements.txt
+# (or) pip install streamlit altair pandas
+
+
+Run the app
+
+streamlit run streamlit_app.py
+
+
+Stop = Ctrl+C. Deactivate venv = deactivate.
 
 Then the app should run :) !
 
