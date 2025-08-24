@@ -26,6 +26,8 @@ from typing import Dict, List, Tuple, Optional, Any
 import copy
 import json
 import os
+import tempfile
+from pathlib import Path
 from datetime import datetime, timezone, timedelta
 
 # =========================
@@ -110,8 +112,20 @@ FRESHNESS_SLA_DAYS = int(os.environ.get("WATER_APP_SLA_DAYS", "30"))
 # How many consecutive failures before we escalate to "NON_COMMUNICATING"
 NONCOMMUNICATION_THRESHOLD = int(os.environ.get("WATER_APP_NONCOMM_THRESHOLD", "3"))
 
-# Where we persist ops state (json, simple and portable)
-STATE_PATH = os.environ.get("WATER_APP_STATE", "ops_state.json")
+# ---------- Robust, cloud-safe state path ----------
+# Back-compat: if WATER_APP_STATE is set, treat it as the full file path.
+# Otherwise use STATE_DIR (default /tmp/water_price_app_state) + "ops_state.json".
+DEFAULT_STATE_FILENAME = "ops_state.json"
+_state_file_env = os.environ.get("WATER_APP_STATE")
+if _state_file_env:
+    STATE_PATH = Path(_state_file_env)
+    STATE_DIR = STATE_PATH.parent
+else:
+    STATE_DIR = Path(os.environ.get("STATE_DIR", "/tmp/water_price_app_state"))
+    STATE_PATH = STATE_DIR / DEFAULT_STATE_FILENAME
+# Ensure the directory exists on first import (important on Streamlit Cloud)
+STATE_DIR.mkdir(parents=True, exist_ok=True)
+# ---------------------------------------------------
 
 # Snapshot comparison usage (for drift alerts)
 DRIFT_BENCHMARK_KL = 160.0
@@ -338,35 +352,62 @@ POSTCODE_TO_PROVIDER: Dict[str, List[str]] = {
 def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
+def _default_state() -> Dict[str, Any]:
+    return {
+        "scheduler": {
+            "enabled": False,
+            "interval_minutes": 1440,
+            "last_run_at": None,
+            "next_run_due_at": None,
+            "history": [],  # toggles
+        },
+        "providers": {},   # provider_key -> ProviderHealth as dict
+        "incidents": [],   # list[Incident as dict]
+        "runs": [],        # list[RunLogEntry as dict]
+        "snapshots": {},   # fy -> provider_key -> snapshot dict
+        "meta": dict(META)
+    }
+
 def _load_state() -> Dict[str, Any]:
-    if not os.path.exists(STATE_PATH):
-        return {
-            "scheduler": {
-                "enabled": False,
-                "interval_minutes": 1440,
-                "last_run_at": None,
-                "next_run_due_at": None,
-                "history": [],  # toggles
-            },
-            "providers": {},   # provider_key -> ProviderHealth as dict
-            "incidents": [],   # list[Incident as dict]
-            "runs": [],        # list[RunLogEntry as dict]
-            "snapshots": {},   # fy -> provider_key -> snapshot dict
-            "meta": dict(META)
-        }
-    with open(STATE_PATH, "r", encoding="utf-8") as f:
-        try:
+    # Ensure the directory exists (important on first run / ephemeral containers)
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    if not STATE_PATH.exists():
+        return _default_state()
+    try:
+        with STATE_PATH.open("r", encoding="utf-8") as f:
             return json.load(f)
+    except Exception:
+        # Corrupt file? keep a backup alongside and start fresh
+        try:
+            backup = STATE_PATH.with_suffix(STATE_PATH.suffix + ".bak")
+            os.replace(STATE_PATH, backup)
         except Exception:
-            # Corrupt file? start fresh but keep a backup
-            os.rename(STATE_PATH, STATE_PATH + ".bak")
-            return _load_state()
+            pass
+        return _default_state()
 
 def _save_state(state: Dict[str, Any]) -> None:
-    tmp = STATE_PATH + ".tmp"
-    with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(state, f, indent=2, ensure_ascii=False)
-    os.replace(tmp, STATE_PATH)
+    """
+    Atomically persist state into STATE_PATH:
+      - write to temp file IN THE SAME DIRECTORY
+      - flush + fsync
+      - os.replace to final path (atomic on POSIX)
+    """
+    STATE_DIR.mkdir(parents=True, exist_ok=True)
+    fd, tmp_path = tempfile.mkstemp(dir=str(STATE_DIR), prefix="ops-", suffix=".json")
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            json.dump(state, f, indent=2, ensure_ascii=False)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, str(STATE_PATH))
+    except Exception:
+        # best-effort cleanup
+        try:
+            if os.path.exists(tmp_path):
+                os.unlink(tmp_path)
+        except OSError:
+            pass
+        raise
 
 def _ensure_health(state: Dict[str, Any], provider_key: str) -> ProviderHealth:
     ph_dict = state["providers"].get(provider_key)
