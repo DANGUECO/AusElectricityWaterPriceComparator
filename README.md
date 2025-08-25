@@ -83,7 +83,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 Install deps
 
 pip install -r requirements.txt
-# (or) pip install streamlit altair pandas
+(or) pip install streamlit altair pandas
 
 
 Run the app
