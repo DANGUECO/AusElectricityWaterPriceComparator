@@ -82,6 +82,7 @@ def _parse_postcodes(raw: str) -> List[str]:
     pcs = [p.strip() for p in raw.split(",") if p.strip()]
     return list(dict.fromkeys(pcs))  # de-dup, keep order
 
+
 def _json_preview(obj: Any, max_chars: int = 140) -> str:
     """Short JSON string for table cells; full content is shown in expanders."""
     try:
@@ -89,6 +90,7 @@ def _json_preview(obj: Any, max_chars: int = 140) -> str:
         return (s[: max_chars - 1] + "…") if len(s) > max_chars else s
     except Exception:
         return str(obj)
+
 
 def _provider_to_postcodes() -> Dict[str, List[str]]:
     """
@@ -102,6 +104,7 @@ def _provider_to_postcodes() -> Dict[str, List[str]]:
     for k in list(mapping.keys()):
         mapping[k] = sorted(set(mapping[k]))
     return mapping
+
 
 def _health_rows() -> pd.DataFrame:
     """
@@ -124,6 +127,7 @@ def _health_rows() -> pd.DataFrame:
             "Notes": " | ".join(ph.notes) if ph.notes else "",
         })
     return pd.DataFrame(rows)
+
 
 def _cost_curve_for_postcode(postcode: str, kl_min: float, kl_max: float, kl_step: float = 10.0) -> Optional[pd.DataFrame]:
     """Compute cost curves for all providers mapped to a postcode (QA/planning view)."""
@@ -148,6 +152,34 @@ def _cost_curve_for_postcode(postcode: str, kl_min: float, kl_max: float, kl_ste
                 "Estimated Bill ($/yr)": round(calculate_bill(t, k, provider_threshold(key)), 2),
             })
     return pd.DataFrame(rows)
+
+
+def _cost_matrix_for_postcodes(postcodes: List[str], kl_min: float, kl_max: float, kl_step: float = 10.0) -> pd.DataFrame:
+    """Matrix of cheapest estimates across postcodes over a usage range.
+
+    Returns long-form rows: Postcode • Usage • Estimated Bill • Provider • Region
+    """
+    xs: List[float] = []
+    k = kl_min
+    while k <= kl_max + 1e-9:
+        xs.append(round(k, 3))
+        k += kl_step
+
+    rows: List[Dict[str, Any]] = []
+    for pc in postcodes:
+        for u in xs:
+            best = cheapest_for_postcode(pc, u)
+            if not best:
+                continue
+            rows.append({
+                "Postcode": pc,
+                "Usage (kL/yr)": u,
+                "Estimated Bill ($/yr)": round(float(best["total"]), 2),
+                "Provider": best["provider_name"],
+                "Region": best["region"],
+            })
+    return pd.DataFrame(rows)
+
 
 # =============================================================================
 # Scheduled refresh: run if due (harmless if disabled)
@@ -337,36 +369,87 @@ if view == "Explorer":
 
         st.markdown("---")
 
+        # =====================
+        # Cost vs usage section
+        # =====================
         st.subheader("Cost vs usage (QA & planning)")
-        st.caption("Visualise how estimates change with usage for a single postcode. Axes are clamped to your chosen range.")
-        cc_col1, cc_col2, cc_col3 = st.columns([1, 1, 1])
-        with cc_col1:
-            cc_pc = st.selectbox("Pick a postcode", options=["—"] + postcodes, index=0, key="curve_pc")
+        st.caption("Choose a mode. In compare mode, we plot the cheapest option per postcode and also show a usage × postcode table.")
+
+        # ---- New: mode dropdown including side-by-side compare ---------------
+        cc_mode = st.selectbox(
+            "Mode",
+            options=[
+                "Single postcode — lines per provider",
+                "Compare postcodes side-by-side — cheapest per postcode",
+            ],
+            index=0,
+            help="Switch between a single-postcode provider breakdown and a side-by-side postcode comparison.",
+        )
+
+        cc_col1, cc_col2, cc_col3, cc_col4 = st.columns([1, 1, 1, 1])
         with cc_col2:
             cc_min = st.number_input("Usage min (kL)", min_value=0.0, max_value=900.0, value=0.0, step=10.0, key="curve_min")
         with cc_col3:
             cc_max = st.number_input("Usage max (kL)", min_value=10.0, max_value=1000.0, value=200.0, step=10.0, key="curve_max")
+        with cc_col4:
+            cc_step = st.number_input("Step (kL)", min_value=1.0, max_value=200.0, value=10.0, step=1.0, help="Granularity of the usage grid.")
 
         if cc_max <= cc_min:
             st.warning("Usage max must be greater than min.")
         else:
-            if cc_pc and cc_pc != "—":
-                curve_df = _cost_curve_for_postcode(cc_pc, cc_min, cc_max, kl_step=10.0)
-                if curve_df is None or curve_df.empty:
-                    st.info("No providers mapped for that postcode.")
-                else:
-                    chart = (
-                        alt.Chart(curve_df)
-                        .mark_line(point=True)
-                        .encode(
-                            x=alt.X("Usage (kL/yr):Q", scale=alt.Scale(domain=[cc_min, cc_max])),
-                            y=alt.Y("Estimated Bill ($/yr):Q"),
-                            color=alt.Color("Provider:N"),
-                            tooltip=["Provider", "Region", "Usage (kL/yr)", "Estimated Bill ($/yr)"],
+            if cc_mode.startswith("Single postcode"):
+                with cc_col1:
+                    cc_pc = st.selectbox("Pick a postcode", options=["—"] + postcodes, index=0, key="curve_pc")
+                if cc_pc and cc_pc != "—":
+                    curve_df = _cost_curve_for_postcode(cc_pc, cc_min, cc_max, kl_step=float(cc_step))
+                    if curve_df is None or curve_df.empty:
+                        st.info("No providers mapped for that postcode.")
+                    else:
+                        chart = (
+                            alt.Chart(curve_df)
+                            .mark_line(point=True)
+                            .encode(
+                                x=alt.X("Usage (kL/yr):Q", scale=alt.Scale(domain=[cc_min, cc_max])),
+                                y=alt.Y("Estimated Bill ($/yr):Q"),
+                                color=alt.Color("Provider:N"),
+                                tooltip=["Provider", "Region", "Usage (kL/yr)", "Estimated Bill ($/yr)"]
+                            )
+                            .properties(height=360)
                         )
-                        .properties(height=360)
-                    )
-                    st.altair_chart(chart, use_container_width=True)
+                        st.altair_chart(chart, use_container_width=True)
+                else:
+                    st.info("Choose a postcode to plot provider lines.")
+
+            else:  # Compare postcodes side-by-side — cheapest per postcode
+                if not postcodes:
+                    st.info("Enter one or more postcodes in the inputs on the right.")
+                else:
+                    matrix_df = _cost_matrix_for_postcodes(postcodes, cc_min, cc_max, kl_step=float(cc_step))
+                    if matrix_df.empty:
+                        st.info("No mapped providers for the given postcodes.")
+                    else:
+                        # Line chart — one line per postcode (cheapest at each usage)
+                        chart = (
+                            alt.Chart(matrix_df)
+                            .mark_line(point=True)
+                            .encode(
+                                x=alt.X("Usage (kL/yr):Q", scale=alt.Scale(domain=[cc_min, cc_max])),
+                                y=alt.Y("Estimated Bill ($/yr):Q"),
+                                color=alt.Color("Postcode:N"),
+                                tooltip=["Postcode", "Provider", "Region", "Usage (kL/yr)", "Estimated Bill ($/yr)"]
+                            )
+                            .properties(height=360)
+                        )
+                        st.altair_chart(chart, use_container_width=True)
+
+                        # Side-by-side table (usage × postcode)
+                        st.markdown("**Side-by-side table (cheapest per postcode)**")
+                        pivot = matrix_df.pivot(index="Usage (kL/yr)", columns="Postcode", values="Estimated Bill ($/yr)").sort_index()
+                        st.dataframe(pivot, use_container_width=True)
+
+                        # Optional: CSV download of the pivot
+                        csv = pivot.to_csv(index=True).encode("utf-8")
+                        st.download_button("⬇️ Download comparison (CSV)", data=csv, file_name="water_cost_comparison_usage_by_postcode.csv", mime="text/csv")
 
 # =============================================================================
 # VIEW: Ops — Health (freshness, failures, coverage)
