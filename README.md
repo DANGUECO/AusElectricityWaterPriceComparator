@@ -17,8 +17,6 @@ Optional: open Cost curves to compare providers across a usage range.
 
 Top tiles show overall health (OK/STALE/etc).
 
-Use Refresh now to validate everything, or Enable scheduler for automatic checks.
-
 Check Provider health, Incidents, and Run logs for operational visibility.
 
 # Test if you want
