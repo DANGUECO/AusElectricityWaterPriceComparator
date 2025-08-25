@@ -116,7 +116,7 @@ Then the app should run :) !
 
 <img width="805" height="401" alt="image" src="https://github.com/user-attachments/assets/dd0bf785-90cc-459e-843b-d5b1f343bcf1" />
 
+#video summary
 
-
-
+https://github.com/user-attachments/assets/267191f9-6d2e-4ca8-9032-ed1be40f5db8
 
